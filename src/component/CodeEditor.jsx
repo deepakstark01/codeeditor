@@ -6,8 +6,6 @@ import { FaCopy, FaLock, FaUnlock, FaSave } from 'react-icons/fa';
 import 'ace-builds/src-noconflict/mode-javascript'; // Import the JavaScript mode
 import 'ace-builds/src-noconflict/theme-github'; // Choose an Ace Editor theme
 
-import 'tailwindcss/tailwind.css'; // Import Tailwind CSS
-
 const CodeEditor = () => {
   const [code, setCode] = useState('// Write your code here');
   const [isLocked, setLocked] = useState(false);
@@ -68,7 +66,7 @@ const CodeEditor = () => {
         readOnly={isLocked}
         onChange={(value) => setCode(value)}
         width="100%"
-        height="300px"
+        height="500px"
       />
     </div>
   );
